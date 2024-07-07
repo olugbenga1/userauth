@@ -1,0 +1,20 @@
+### Register a new user
+POST http://localhost:3000/auth/register
+content-type: application/json
+
+{
+    "firstName": "Jack",
+    "lastName": "Bullish",
+    "email": "jack@bulls.com",
+    "password": "password123",
+    "phone": "09774456"
+}
+
+### Login a user
+POST http://localhost:3000/auth/login
+content-type: application/json
+
+{
+    "email": "jack@bulls.com",
+    "password": "password123"
+}
