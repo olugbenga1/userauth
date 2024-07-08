@@ -3,11 +3,11 @@ POST http://localhost:3000/auth/register
 content-type: application/json
 
 {
-    "firstName": "Jack",
-    "lastName": "Bullish",
-    "email": "jack@bulls.com",
+    "firstName": "Anita",
+    "lastName": "Baker",
+    "email": "ani@ani.com",
     "password": "password123",
-    "phone": "09774456"
+    "phone": "908463354"
 }
 
 ### Login a user
@@ -15,6 +15,19 @@ POST http://localhost:3000/auth/login
 content-type: application/json
 
 {
-    "email": "jack@bulls.com",
+    "email": "ani@ani.com",
     "password": "password123"
 }
+
+### Create a new organization
+POST http://localhost:3000/api/organisations
+content-type: application/json
+
+{
+    "name": "Chocolate",
+    "description": ""
+}
+
+### Find a user by id
+GET http://localhost:3000/api/users/39086362-2c63-428f-8e85-d935da4b9f7c
+content-type: application/json
